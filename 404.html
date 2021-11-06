@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Error 404 :(</title>
+    <title>Redirecting to https://stevenferrer.github.io/</title>
 
     <script>
       window.onload = function () {
@@ -11,10 +11,9 @@
         const destination = window.location.href;
         if (window.location.href.includes(oldUrl)) {
           const redirectLocation = window.location.href.replace(oldUrl, newUrl);
-          document.getElementById("body").innerHTML =
-            "I sf9v.github.io has moved to stevenferrer.github.io " +
-            redirectLocation +
-            " ...";
+          document.getElementById(
+            "body"
+          ).innerHTML = `Redirecting to ${redirectLocation} ...`;
           window.location.href = redirectLocation;
         }
       };
@@ -22,6 +21,6 @@
   </head>
 
   <body id="body" style="text-align: center">
-    Page not found
+    404 - Not found
   </body>
 </html>
